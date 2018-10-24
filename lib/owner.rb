@@ -2,8 +2,6 @@ class Owner
   attr_accessor :name, :pets
   attr_reader   :species
 
-  @@owners = Array.new
-
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
@@ -11,9 +9,6 @@ class Owner
   end
 
   def self.all
-    @@owners.each do |owner|
-      puts owner
-    end
   end
 
   def say_species
