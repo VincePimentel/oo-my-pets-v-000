@@ -46,6 +46,7 @@ class Owner
     walk_dogs("nervous")
     play_with_cats("nervous")
     feed_fish("nervous")
+    return true
   end
 
   def list_pets
