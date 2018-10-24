@@ -32,7 +32,10 @@ class Owner
 
   #
 
-  def sell_pets
+  def list_pets
+    self.pets.each do |pet, num|
+      "I have #{num.size}"
+    end
   end
 
   end
