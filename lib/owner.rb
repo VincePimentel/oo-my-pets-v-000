@@ -2,14 +2,22 @@ class Owner
   attr_accessor :name, :pets
   attr_reader   :species
 
+  @@all = Array.new
+
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @species = "human"
   end
 
+  # START OF CLASS METHODS
+
   def self.all
+    @@all
   end
+
+
+  # END OF CLASS METHODS
 
   def say_species
     "I am a #{self.species}."
