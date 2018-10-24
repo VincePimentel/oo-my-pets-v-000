@@ -1,16 +1,17 @@
 class Owner
-  attr_accessor :name, :pets, :owners
+  attr_accessor :name, :pets
   attr_reader   :species
+
+  @@owners = Array.new
 
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @species = "human"
-    @owners = self
   end
 
   def self.all
-    @owners
+    @@owners
   end
 
   def say_species
