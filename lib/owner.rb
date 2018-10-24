@@ -43,7 +43,7 @@ class Owner
   end
 
   def sell_pets
-    self.pets.values.collect { |pet| pet.mood = "nervous" }
+    self.pets.values.flatten.collect { |pet| pet.mood = "nervous" }
   end
 
   def list_pets
