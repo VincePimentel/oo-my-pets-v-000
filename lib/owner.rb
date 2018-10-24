@@ -5,6 +5,6 @@ class Owner
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
-    @species = species
+    @species = Array.new
   end
 end
