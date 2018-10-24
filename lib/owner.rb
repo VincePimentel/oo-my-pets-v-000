@@ -29,4 +29,11 @@ class Owner
     dog = Dog.new(dog)
     self.pets[:dogs] << dog
   end
+
+  #
+
+  def sell_pets
+  end
+
+  end
 end
