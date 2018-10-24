@@ -38,8 +38,8 @@ class Owner
     self.pets[:cats].collect { |pet| pet.mood = "happy" }
   end
 
-  def feed_fish
-    self.pets[:fishes].collect { |pet| pet.mood = "happy" }
+  def feed_fish(mood = "happy")
+    self.pets[:fishes].collect { |pet| pet.mood = "mood" }
   end
 
   def sell_pets
