@@ -42,7 +42,9 @@ class Owner
     self.pets[:fishes].collect { |pet| pet.mood = "happy" }
   end
 
-  #
+  def sell_pets
+    self.pets.values.collect { |pet| pet.mood = "nervous" }
+  end
 
   def list_pets
     fish_count = self.pets[:fishes].size
