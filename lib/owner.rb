@@ -31,12 +31,15 @@ class Owner
   end
 
   def walk_dogs
-    self.pets[:dogs].collect do |pet|
-      pet.mood = "happy"
-    end
+    self.pets[:dogs].collect { |pet| pet.mood = "happy" }
   end
 
   def play_with_cats
+    self.pets[:cats].collect { |pet| pet.mood = "happy" }
+  end
+
+  def feed_fish
+    self.pets[:fishes].collect { |pet| pet.mood = "happy" }
   end
 
   #
