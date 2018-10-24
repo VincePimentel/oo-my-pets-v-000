@@ -58,9 +58,9 @@ class Owner
     self.pets[:fishes].collect { |pet| pet.mood = mood }
   end
 
-  def sell_pets
+  def sell_pets(mood = "nervous")
     self.pets.collect do |species, pets|
-      pets.each { |pet| pet.mood = "nervous" }.clear
+      pets.each { |pet| pet.mood = mood }.clear
     end
   end
 
