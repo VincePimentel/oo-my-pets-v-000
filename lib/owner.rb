@@ -17,6 +17,10 @@ class Owner
     @@all
   end
 
+  def self.count
+    self.all.size
+  end
+
   # END OF CLASS METHODS
 
   def say_species
