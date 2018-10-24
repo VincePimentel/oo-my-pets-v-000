@@ -21,4 +21,9 @@ class Owner
     cat = Cat.new(cat)
     self.pets[:cats] << cat
   end
+
+  def buy_dog(dog)
+    dog = Dog.new(dog)
+    self.pets[:dogs] << dog
+  end
 end
