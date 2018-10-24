@@ -43,10 +43,11 @@ class Owner
   end
 
   def sell_pets
-    walk_dogs("nervous")
-    play_with_cats("nervous")
-    feed_fish("nervous")
-    return true
+    self.pets.collect do |species, pets|
+      pets.each do |pet|
+        pet.mood = "nervous"
+      end
+    end
   end
 
   def list_pets
