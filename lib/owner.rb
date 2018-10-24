@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :name, :pets, :dog, :mood
+  attr_accessor :name, :pets
   attr_reader   :species
 
   def initialize(name)
@@ -28,6 +28,6 @@ class Owner
   end
 
   def walk_dogs
-    dog.mood = Dog.new("happy")
+    
   end
 end
