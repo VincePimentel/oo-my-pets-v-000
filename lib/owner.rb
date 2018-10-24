@@ -8,6 +8,10 @@ class Owner
     @species = "human"
   end
 
+  def self.all
+    
+  end
+
   def say_species
     "I am a #{self.species}."
   end
@@ -28,6 +32,6 @@ class Owner
   end
 
   def walk_dogs
-    
+
   end
 end
