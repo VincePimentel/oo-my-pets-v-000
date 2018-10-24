@@ -25,7 +25,7 @@ class Owner
     self.all.clear
   end
 
-  # END OF CLASS METHODS
+  # END OF CLASS METHODS, START OF INSTANCE METHODS
 
   def say_species
     "I am a #{self.species}."
@@ -70,4 +70,6 @@ class Owner
     cat_count = self.pets[:cats].size
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
+
+  # END OF INSTANCE METHODS
 end
