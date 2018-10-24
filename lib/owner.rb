@@ -6,7 +6,7 @@ class Owner
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @species = "human"
-    @owners << self
+    @owners = self
   end
 
   def self.all
