@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :name, :pets
+  attr_accessor :name, :pets, :owners
   attr_reader   :species
 
   def initialize(name)
@@ -9,7 +9,7 @@ class Owner
   end
 
   def self.all
-
+    @owners
   end
 
   def say_species
