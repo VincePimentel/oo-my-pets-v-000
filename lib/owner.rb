@@ -9,7 +9,7 @@ class Owner
   end
 
   def self.all
-    
+
   end
 
   def say_species
