@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :name, :pets, :mood
+  attr_accessor :name, :pets#, :mood
   attr_reader   :species
 
   def initialize(name)
