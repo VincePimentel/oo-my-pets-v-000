@@ -30,12 +30,12 @@ class Owner
     self.pets[:dogs] << dog
   end
 
-  def walk_dogs
-    self.pets[:dogs].collect { |pet| pet.mood = "happy" }
+  def walk_dogs(mood = "happy")
+    self.pets[:dogs].collect { |pet| pet.mood = mood }
   end
 
-  def play_with_cats
-    self.pets[:cats].collect { |pet| pet.mood = "happy" }
+  def play_with_cats(mood = "happy")
+    self.pets[:cats].collect { |pet| pet.mood = mood }
   end
 
   def feed_fish(mood = "happy")
@@ -43,6 +43,8 @@ class Owner
   end
 
   def sell_pets
+    walk_dogs("nervous")
+    play_with_cats("nervous")
     feed_fish("nervous")
   end
 
