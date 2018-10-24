@@ -30,6 +30,11 @@ class Owner
     self.pets[:dogs] << dog
   end
 
+  def walk_dogs
+    self.pets[:dogs].mood = "happy"
+
+  end
+
   #
 
   def list_pets
