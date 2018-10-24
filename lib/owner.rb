@@ -37,6 +37,4 @@ class Owner
       "I have #{num.size}"
     end
   end
-
-  end
 end
