@@ -31,16 +31,19 @@ class Owner
   end
 
   def walk_dogs
-    self.pets[:dogs].mood = Dog.new("happy")
-
+    self.pets.collect do |species, pets|
+      if species == :dogs
+        pets.mood = "happy"
+      end
+    end
   end
 
   #
 
   def list_pets
-    fish_count = self.pets[:fishes].count
-    dog_count = self.pets[:dogs].count
-    cat_count = self.pets[:cats].count
+    fish_count = self.pets[:fishes].size
+    dog_count = self.pets[:dogs].size
+    cat_count = self.pets[:cats].size
     "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
 end
