@@ -12,7 +12,7 @@ class Owner
 
   def self.all
     @@owners.each do |owner|
-      owner
+      puts owner
     end
   end
 
