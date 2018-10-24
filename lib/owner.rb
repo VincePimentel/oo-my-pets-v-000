@@ -8,7 +8,7 @@ class Owner
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @species = "human"
-    @@all << self
+    #@@all << self
   end
 
   # START OF CLASS METHODS
