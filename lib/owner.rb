@@ -11,7 +11,9 @@ class Owner
   end
 
   def self.all
-    @@owners
+    @@owners.each do |owner|
+      owner
+    end
   end
 
   def say_species
